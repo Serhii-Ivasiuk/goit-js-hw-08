@@ -35,7 +35,7 @@ function settleFormInputs() {
   const savedData = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
 
   if (savedData) {
-    for (key in savedData) {
+    for (let key in savedData) {
       refs[key].value = savedData[key];
     }
   }
